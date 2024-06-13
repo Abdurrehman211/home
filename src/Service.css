@@ -1,0 +1,204 @@
+.card {
+  background-color: rgb(75, 102, 252);
+    border: 2px solid black;
+    box-shadow: 10px 4px 10px 5px rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  #service{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background:linear-gradient(to bottom,rgb(52, 6, 255) , rgb(2, 2, 53));
+    margin-bottom:100px ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card:hover {
+    box-shadow: 10px 8px 16px 5px rgba(0,0,0,0.2);
+    background-color: cornflowerblue;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  .card:hover > .container > h4{
+    color: rgb(0, 0, 0);
+  }
+  .card:hover > .container > p{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  .card:hover > #bag-logo,
+  .card:hover > #cube-logo,
+  .card:hover > #database-logo{
+     animation: animate1 1s forwards ;
+  }
+  @keyframes animate1 {
+   from{
+    width: 100px;
+    height: 100px;
+   }
+   to{
+    width: 100px;
+    height: 100px;
+    top: 0%;
+    margin-top: -50px;
+   } 
+  }
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  .container > h4{
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+font-size: xx-large;
+color: aliceblue;
+  }
+  .container > p{
+    font-size: 15px;
+    text-align: justify;
+  }
+  #p{
+    font-size: 20px;
+    text-align: justify;
+    padding-bottom: 20px;
+  }
+  #bag-logo{
+   
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  .block1{
+    border: 5px solid black;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(2px);
+  display: block;
+  width: 80%;
+  height: max-content;
+  padding: 50px;
+margin: auto auto;
+margin-top: 100px;
+
+  }
+  .Card1 {
+   
+    margin: auto auto;
+    padding: 20px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(3,1.5fr);
+    justify-content: space-between;
+    align-items: center;
+    animation: popup 7s forwards;
+  }
+  @keyframes popup {
+    from{
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .Card2{
+    margin: auto auto;
+    padding: 20px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(3,1.5fr);
+    justify-content: space-between;
+    align-items: center;
+    animation: popup 7s forwards;
+    animation-delay: 3s;
+  }
+  #cube-logo{
+    mix-blend-mode: hard-light;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 20px;
+   
+  }
+  #database-logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  .header1-1{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header1{
+    width: fit-content;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 20px;
+    background-color: rgb(27, 0, 148);
+    border: 2px solid black;
+    box-shadow: inset 10px 4px 10px 5px rgba(0,0,0,0.2);
+    animation: colorchange 3s infinite;
+  }
+  @keyframes colorchange {
+    0%{
+       background-color: lightblue;
+       color: black;
+    }
+    20%{
+      background-color: rgb(78, 100, 199);
+      color: black;
+   }
+   40%{
+    background-color: rgb(12, 26, 226);
+    color: black;
+ }
+ 60%{
+  background-color: rgb(3, 4, 112);
+  color: rgb(248, 248, 248);
+}
+80%{
+  background-color: rgb(5, 2, 49);
+  color: rgb(255, 255, 255);
+}
+100%{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+  }
+  .header1 >  h1{
+    color: aliceblue;
+    mix-blend-mode: hard-light;
+font-size: 70px;
+text-align: center;
+animation: colorchange1 3s infinite;
+  }
+
+  @keyframes colorchange1 {
+    0%{
+   
+       color: black;
+    }
+    20%{
+
+      color: black;
+   }
+   40%{
+   
+    color: black;
+ }
+ 60%{
+
+  color: rgb(248, 248, 248);
+}
+80%{
+
+  color: rgb(255, 255, 255);
+}
+100%{
+
+  color: rgb(255, 255, 255);
+}
+  }
